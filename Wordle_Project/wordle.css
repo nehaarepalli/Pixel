@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+  margin: 0;
+  padding: 40px 16px;
+}
+.game {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 24px;
+  box-sizing: border-box;
+}
+h1 {
+  margin: 0 0 20px;
+}
+.board {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 6px;
+  width: 250px;
+  max-width: 100%;
+  margin: 0 auto 24px;
+}
+.cell {
+  aspect-ratio: 1 / 1;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  background-color: #fff;
+}
+.cell.correct {
+  background-color: green;
+  border-color: green;
+  color: #fff;
+}
+.cell.present {
+  background-color: yellow;
+  border-color: yellow;
+  color: #000;
+}
+.cell.absent {
+  background-color: gray;
+  border-color: gray;
+  color: #fff;
+}
+.guess-area {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+#guess-input {
+  width: 140px;
+  padding: 6px 8px;
+  font-size: 1rem;
+  border: 1px solid #888;
+  border-radius: 3px;
+}
+#submit-button {
+  padding: 6px 16px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  background-color: #efefef;
+  border: 1px solid #888;
+  border-radius: 3px;
+  cursor: pointer;
+}
+#submit-button:disabled,
+#guess-input:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+.message {
+  margin: 16px 0 0;
+  font-size: 1rem;
+  font-weight: bold;
+  min-height: 1.4em;
+}

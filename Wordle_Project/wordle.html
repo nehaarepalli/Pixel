@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wordle Game</title>
+    <link rel="stylesheet" href="wordle.css" />
+  </head>
+  <body>
+    <div class="game">
+      <h1>Wordle Game</h1>
+
+      <div id="board" class="board"></div>
+
+      <div class="guess-area">
+        <input
+          type="text"
+          id="guess-input"
+          maxlength="5"
+          aria-label="Enter your guess"
+          autofocus
+        />
+        <button id="submit-button">Submit Guess</button>
+      </div>
+
+      <p id="message" class="message"></p>
+    </div>
+
+    <script src="wordle-words.js"></script>
+    <script src="wordle.js"></script>
+  </body>
+</html>
